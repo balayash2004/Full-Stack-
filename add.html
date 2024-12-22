@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Booking Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image:url('img/add2.jpeg');
+      background-size: 100% 120%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      background-size: 100% 100%;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .container:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #f0871f;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: white;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    input[type="submit"] {
+      background-color: #7c5013;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      display: block;
+      width: 25%;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+      text-transform: uppercase;
+    }
+
+    #orderDetails {
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+
+    #orderDetails p {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Order Booking Form</h2>
+    <form id="orderForm" action="index1.jsp">
+
+      <label for="quantity">Username:</label>
+      <input type="text" id="uname" required>
+
+
+      <label for="doorNo">Door No:</label>
+      <input type="text" id="doorNo" required>
+
+      <label for="address">Street Name:</label>
+      <input type="text" id="sname" required>
+
+      <label for="district">District:</label>
+      <input type="text" id="district" required>
+
+      <label for="state">State:</label>
+      <input type="text" id="state" required>
+
+      <label for="pincode">Pincode:</label>
+      <input type="text" id="pincode" required>
+
+      <label for="Payment">Payment Type</label>
+      <select required>
+        <option>select</option>
+        <option>Cash On Delivery</option>
+      </select>
+
+      <center><input type="submit" onclick="Alert()" value="submit"></center>
+    </form>
+    <div id="orderDetails"></div>
+  </div>
+  <script
+    function Alert(){
+      alert("Order Placed Successfully");
+    }
+  </script>
+</body>
+</html>

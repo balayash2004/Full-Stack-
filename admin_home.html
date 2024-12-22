@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Panel</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .sub1 {
+            flex-grow: 1;
+        }
+
+        .sub2 {
+            flex-grow: 3;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #007bff;
+        }
+
+        .butt1 {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .butt1:hover {
+            background-color: #0056b3;
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .sub3,
+        .sub4 {
+            flex-basis: 48%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .sub3:hover,
+        .sub4:hover {
+            transform: translateY(-5px);
+        }
+
+        .sub3 h2 {
+            margin-top: 0;
+        }
+
+        .sub3 p {
+            color: #666;
+        }
+
+        .sub4 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .sub1,
+            .sub2 {
+                margin-bottom: 10px;
+            }
+
+            .section {
+                flex-direction: column;
+            }
+
+            .sub3,
+            .sub4 {
+                flex-basis: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="sub1">
+                <h1>Admin Panel</h1>
+            </div>
+            <div class="sub2">
+                <ul>
+                    <li><a href="#" style="color:black">Dashboard</a></li>
+                    <li><a href="disp.jsp" style="color:black">Users</a></li>
+                    <li><a href="shop.html" style="color:black">Products</a></li>
+                    <li><a href="orders.jsp" style="color:black">Orders</a></li>
+                </ul>
+            </div>
+            <div>
+                <button class="butt1"><a href="index.html" style="color:white">Log Out</a></button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="sub3">
+                <h2>Dashboard</h2>
+                <p>Welcome to the admin panel. Here you can manage users, products, and orders.</p>
+                <!-- Display any relevant statistics or information here -->
+            </div>
+            <div class="sub4">
+                <!-- You can add additional sections for user, product, and order management here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Your JavaScript code here (if needed)
+    </script>
+</body>
+
+</html>

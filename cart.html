@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    <div class="header">
+        <p class="logo" style="font-family: Brush Script MT,cursive; font-size: 55px;">BOTLOG</p>
+        <div class="cart"><i class="fas fa-shopping-cart"></i><p id="count">0</p></div>
+        </div>
+    </div>
+    <div class="container">
+    <div id="root"></div>
+    <div class="sidebar">
+        <div class="head">
+            <p>My Cart</p>
+        </div>
+        <div id="cartItem">Your Cart is Empty</div>
+        <div class="foot">
+            <h3>Total</h3>
+            <h2 id="total">₹ 0.0</h2>
+        </div>
+    <input class="checkout" type="submit" onclick="Alert()" value="Checkout">
+    </div>
+    </div>
+    <script src="js/addtocart.js">
+        function placeOrder() {
+            // You can use AJAX to send data to the server and handle the response
+            // For simplicity, let's assume the server-side code processes the order synchronously
+            // and then redirects to a success page.
+            window.location.href = "placeOrder.jsp"; // Redirect to the page that handles order placement
+        }
+    </script>
+</body>
+</html>
